@@ -1,9 +1,11 @@
-import { ColorModeContext, useMode } from "./theme";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { Routes, Route } from "react-router-dom";
-import Topbar from "./scenes/global/Topbar";
-import Sidebar from "./scenes/global/Sidebar";
-import Dashboard from "./scenes/dashboard";
+import { ColorModeContext, useMode } from './theme'
+import { CssBaseline, ThemeProvider } from '@mui/material'
+import { Routes, Route } from 'react-router-dom'
+import Topbar from './scenes/global/Topbar'
+import Sidebar from './scenes/global/Sidebar'
+import Dashboard from './scenes/dashboard'
+import { ProSidebarProvider } from 'react-pro-sidebar'
+
 // import Team from "./scenes/team";
 // import Invoices from "./scenes/invoices";
 // import Contacts from "./scenes/contacts";
@@ -16,7 +18,7 @@ import Dashboard from "./scenes/dashboard";
 // import Calender from "./scenes/calender";
 
 function App() {
-  const [theme, colorMode] = useMode();
+  const [theme, colorMode] = useMode()
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
@@ -42,7 +44,7 @@ function App() {
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
-  );
+  )
 }
 
-export default App;
+export default App
