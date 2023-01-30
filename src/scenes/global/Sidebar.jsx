@@ -16,7 +16,7 @@ import PieChartOutlined from "@mui/icons-material/PieChartOutlined"
 import TimelineOutlined from "@mui/icons-material/TimelineOutlined"
 import MenuOutlined from "@mui/icons-material/MenuOutlined"
 import MapOutlined from "@mui/icons-material/MapOutlined"
-import image from "../../assets/123.png"
+import profileImage from "../../assets/123.png"
 
 
 const Item = ({title, to, icon, selected, setSelected}) => {
@@ -90,7 +90,7 @@ const Sidebar = () => {
                             alt="profile-use"
                             width="70px"
                             height="70"
-                            src={image}
+                            src={profileImage}
                             style={{cursor: "pointer", borderRadius: "50%"}}
                              />
                         </Box>
@@ -102,6 +102,7 @@ const Sidebar = () => {
                     )}
                 
                 {/* Menu Items */}
+                
                 <Box pl={isCollapsed ? undefined : "10%"}>
                     <Item 
                     title="Dashboard"
